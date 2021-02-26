@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>SimpleScrum</title>
 </head>
-<body>
+<body id="body">
     <header>
         <div class="header-container">
             <img src="./img/logo.svg" alt="Logo SimpleScrum">
@@ -16,41 +17,26 @@
 
     <main>
         <div class="main-container">
-            <h1>SimpleScrum</h1>
-            <div class="container">
-                <h2>TO DO</h2>
-                <div class="tasks-container">
-                    <article class="task">
-                        <h3>Crear JSON del proyecto</h3>
-                        <p>Responsable: <span>Camilo Vargas</span> </p>
-                        <p>Plaze: <span>05/Jun/2020</span> </p>
-                    </article>
-                </div>
+          <h1>SimpleScrum</h1>
+          <div class="container">
+            <h2>TO DO</h2>
+            <div class="task-container" id="todoTasks">
             </div>
-            <div class="container">
-                <h2>IN PROGRESS</h2>
-                <div class="tasks-container">
-                    <article class="task">
-                        <h3>Crear JSON del proyecto</h3>
-                        <p>Responsable: <span>Camilo Vargas</span> </p>
-                        <p>Plaze: <span>05/Jun/2020</span> </p>
-                    </article>
-                </div>
+          </div>
+          <div class="container">
+            <h2>IN PROGRESS</h2>
+            <div class="task-container" id="inProgressTasks">
             </div>
-            <div class="container">
-                <h2>DONE</h2>
-                <div class="tasks-container">
-                    <article class="task">
-                        <h3>Crear JSON del proyecto</h3>
-                        <p>Responsable: <span>Camilo Vargas</span> </p>
-                        <p>Plaze: <span>05/Jun/2020</span> </p>
-                    </article>
-                </div>
+          </div>
+          <div class="container">
+            <h2>DONE</h2>
+            <div class="task-container" id="doneTasks">
             </div>
+          </div>
         </div>
-    </main>
+      </main>
 
-    <aside>
+    <aside class="" id="formElement">
         <div class="aside-container">
             <h2>Nueva Tarea</h2>
             <div class="form-container">
@@ -63,9 +49,9 @@
                       <label for="personTask">Responsable</label>
                       <select name="personTask" id="personTask" required>
                         <option value="">-Seleccionar-</option>
-                        <option value="beto">Camilo Vargas</option>
-                        <option value="juan">Dandelion</option>
-                        <option value="otoniel">Sigurd R.</option>
+                        <option value="Camilo Vargas">Camilo Vargas</option>
+                        <option value="Dandelion">Dandelion</option>
+                        <option value="Sigurd R.">Sigurd R.</option>
                       </select>
                     </div>
                     <div class="input-container">
@@ -86,5 +72,15 @@
         </div>
     </aside>
 
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.12/lib/sortable.js"></script>
+    <script src="./js/helpers.js"></script>
+    <script src="./js/dates.js"></script>
+    <script src="./js/gestures.js"></script>
+    <script src="./js/axios.js"></script>
+    <script src="./js/draganddrop.js"></script>
 </body>
 </html>
