@@ -1,0 +1,60 @@
+{
+    "tasks": [
+      { "id": 1,
+        "title": "Importar estilos CSS",
+        "person": "Camilo",
+        "state": "to-do",
+        "deadline": 1591802130,
+        "created": 1591370128
+      },
+      { "id": 6,
+        "title": "Importar librerías necesarias",
+        "person": "Camilo",
+        "state": "to-do",
+        "deadline": 1591802130,
+        "created": 1591370128
+      },
+      { "id": 7,
+        "title": "Escribir scripts",
+        "person": "Dandelion",
+        "state": "to-do",
+        "deadline": 1591802130,
+        "created": 1591370128
+      },
+      { "id": 7,
+        "title": "Subir el proyecto a la nube",
+        "person": "Sigurd",
+        "state": "to-do",
+        "deadline": 1591802130,
+        "created": 1591370128
+      },
+      { "id": 2,
+        "title": "Marcado HTML del proyecto",
+        "person": "Camilo",
+        "state": "in-progress",
+        "deadline": 1591802130,
+        "created": 1591370128
+      },
+      { "id": 3,
+        "title": "Planificar el proyecto",
+        "person": "Camilo",
+        "state": "done",
+        "deadline": 1591802130,
+        "created": 1591370128
+      },
+      { "id": 4,
+        "title": "Dibujar Wireframes",
+        "person": "Sigurd",
+        "state": "done",
+        "deadline": 1591802130,
+        "created": 1591370128
+      },
+      { "id": 5,
+        "title": "Escribir requerimientos",
+        "person": "Dandelion",
+        "state": "done",
+        "deadline": 1591802130,
+        "created": 1591370128
+      }
+    ]
+  }

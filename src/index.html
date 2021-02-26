@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleScrum</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="./img/logo.svg" alt="Logo SimpleScrum">
+            <button id="newTasks" class="button">Crear Tarea</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <h1>SimpleScrum</h1>
+            <div class="container">
+                <h2>TO DO</h2>
+                <div class="tasks-container">
+                    <article class="task">
+                        <h3>Crear JSON del proyecto</h3>
+                        <p>Responsable: <span>Camilo Vargas</span> </p>
+                        <p>Plaze: <span>05/Jun/2020</span> </p>
+                    </article>
+                </div>
+            </div>
+            <div class="container">
+                <h2>IN PROGRESS</h2>
+                <div class="tasks-container">
+                    <article class="task">
+                        <h3>Crear JSON del proyecto</h3>
+                        <p>Responsable: <span>Camilo Vargas</span> </p>
+                        <p>Plaze: <span>05/Jun/2020</span> </p>
+                    </article>
+                </div>
+            </div>
+            <div class="container">
+                <h2>DONE</h2>
+                <div class="tasks-container">
+                    <article class="task">
+                        <h3>Crear JSON del proyecto</h3>
+                        <p>Responsable: <span>Camilo Vargas</span> </p>
+                        <p>Plaze: <span>05/Jun/2020</span> </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside>
+        <div class="aside-container">
+            <h2>Nueva Tarea</h2>
+            <div class="form-container">
+                <form id="formTask">
+                    <div class="input-container">
+                      <label for="titleTask">Título</label>
+                      <input name="titleTask" id="titleTask" type="text" placeholder="Escriba un título descriptivo" required>
+                    </div>
+                    <div class="input-container">
+                      <label for="personTask">Responsable</label>
+                      <select name="personTask" id="personTask" required>
+                        <option value="">-Seleccionar-</option>
+                        <option value="beto">Camilo Vargas</option>
+                        <option value="juan">Dandelion</option>
+                        <option value="otoniel">Sigurd R.</option>
+                      </select>
+                    </div>
+                    <div class="input-container">
+                      <label for="deadlineTask">Plazo de entrega</label>
+                      <select name="deadlineTask" id="deadlineTask" required>
+                        <option value="">-Seleccionar-</option>
+                        <option value="1">1 día</option>
+                        <option value="2">2 días</option>
+                        <option value="7">1 semana</option>
+                      </select>
+                    </div>
+                    <div class="action-container">
+                      <button type="submit">Guardar</button>
+                      <button type="reset" id="cancelForm">Cancelar</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </aside>
+
+</body>
+</html>
